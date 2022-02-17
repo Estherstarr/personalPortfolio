@@ -93,7 +93,7 @@ body {
 
 .intro {
   max-height: 604px;
-  background-image: url("images/Status-Bars/header-shapes-mobile@2x.svg");
+  background-image: url("assets/images/header-shapes mobile@2x.svg");
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
