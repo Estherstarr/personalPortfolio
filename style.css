@@ -17,12 +17,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 body {
-  width: 380px;
+  max-width: 380px;
   margin: 0 auto;
   font-family: Poppins, sans-serif;
+  background-color: #e5e5e5;
 }
 
 .logo {
@@ -64,10 +66,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  border-bottom-left-radius: 80px;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
   top: 92px;
+  background-color: white;
 }
 
 .intro h1 {
@@ -246,9 +250,10 @@ body {
 }
 
 .tech-tag-name {
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #ebebff;
   padding: 4px 12px;
+  color: #6070ff;
 }
 
 .btn-container {
@@ -307,7 +312,6 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 114px 24px;
-  margin-top: -120px;
 }
 
 .about-section {
@@ -318,7 +322,8 @@ body {
   background-size: cover;
   border-top-right-radius: 80px;
   background-color: #fff;
-  margin-top: -250px;
+  margin-top: -50px;
+  width: 380px;
 }
 
 .about-top {
@@ -329,6 +334,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+  margin-top: -65px;
 }
 
 .about-sec-connect {
@@ -458,4 +464,42 @@ body {
 
 .acc-active {
   display: block;
+}
+
+#html {
+  background-color: #ebebff;
+  height: 24px;
+  width: 60px;
+  color: #6070ff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 1px;
+}
+
+#css {
+  background-color: #ebebff;
+  height: 24px;
+  width: 50px;
+  color: #6070ff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-top: 1px;
+  margin-left: 10px;
+}
+
+#javascript {
+  background-color: #ebebff;
+  height: 24px;
+  width: 100px;
+  color: #6070ff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-top: 1px;
+  margin-left: 5px;
 }
