@@ -504,76 +504,90 @@ body {
   margin-left: 5px;
 }
 
-.contact-form{
+.contact-form {
   margin: 0 24px 0 18px;
-  font-family:Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-.contact-section{  
-  background-color: #6070FF;
+.contact-box {
+  background-color: #6070ff;
+  border-top-left-radius: 80px;
+  height: 779px;
+}
+
+.contact-section {
+  background-color: #fff;
   background-image: url("assets/images/contact-form-shapes-mobile@2x.svg");
   background-repeat: no-repeat;
-  background-position:top right; 
-  /* background-size: cover; */
-  width: 375px;
+  background-position: top right;
+  width: 380px;
   height: 779px;
-  border-top-left-radius:80px;
-
 }
-.h3-contact{
+
+.h3-contact {
   padding-top: 100px;
-  color:#fff;
+  color: #fff;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  line-height:52px;
+  line-height: 52px;
 }
 
-.contact-text{
-  color:#EBEBFF;
+.contact-text {
+  color: #ebebff;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  padding: 25px 25px;  
+  padding: 25px;
 }
-input{
+
+input {
   width: 100%;
   font-size: 17px;
   line-height: 20px;
   padding: 15px 38px 15px 16px;
   margin-bottom: 24px;
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
-  
-}
-textarea{
-  width:100%;
-  padding: 15px 38px 15px 16px;
-  color: #B3BAC5;
-  font-family:Poppins, sans-serif;
-  font-size: 15px;
-  line-height:24px;
-  font-weight: normal;
-  color:#B3BAC5;
-  border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
 }
 
-.contact-button{
+textarea {
+  width: 100%;
+  padding: 15px 38px 15px 16px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #b3bac5;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+.contact-button {
   padding: 12px 16px;
   font-family: Poppins, sans-serif;
-  color: #6070FF;
+  color: #6070ff;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  vertical-align: center;
   letter-spacing: 3%;
   border-radius: 8px;
   border: none;
   margin-top: 12.5px;
   width: 145px;
+}
+
+.contact-button:hover {
+  background-color: #6070ff;
+  color: #fff;
+  box-shadow: 10px 5px 5px #6978ff;
+}
+
+.contact-button:active {
+  background-color: #2230d2;
+  color: #fff;
 }
