@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   <!-- <header>
+   <header>
       <div class="container">
       
         <a href="/" class="logo">My Logo</a>
@@ -87,7 +87,7 @@
           </li>
         </ul>
         <div class="btn-container">
-          <button type="button" class="view-project-btn">See Project</button>
+          <button type="submit" class="view-project-btn">See Project</button>
         </div>
       </article>
       <article class="portfolio-item">
@@ -258,16 +258,19 @@
           <ul class="panel"></ul>
         </li>
       </ul>
-    </section> -->
+    </section>
     <footer class="contact-section">
-      <h3 class="h3-contact">Contact me</h3>
-      <p class="contact-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-      <form class="contact-form">       
-        <input type="text" placeholder="Onomeh"/>
-        <input type="email" placeholder="onomeh@gmail.com"/>
-        <textarea placeholder="Write your message here" maxlength="500" rows="6"></textarea>
-        <button class="contact-button">Get In Touch</button>
+      <div class="contact-box">
+        <h3 class="h3-contact">Contact me</h3>
+        <p class="contact-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+      <form class="contact-form" action="https://formspree.io/f/mdobgbjy" method="POST">       
+        <input type="text" placeholder="Onomeh"  name="username" required/>
+        <input type="email" placeholder="onomeh@gmail.com" name="email" required/>
+        <textarea placeholder="Write your message here" maxlength="500" rows="6" name="comment" required></textarea>
+        <button type="submit" class="contact-button">Get In Touch</button>
       </form>
+      </div>
+      
     </footer>
   </body>
 </html>
