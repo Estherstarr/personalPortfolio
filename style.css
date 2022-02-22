@@ -514,14 +514,15 @@ body {
 .contact-box {
   background-color: #6070ff;
   border-top-left-radius: 80px;
+  background-image: url("assets/images/contact-form-shapes-mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto;
   height: 779px;
 }
 
 .contact-section {
   background-color: #fff;
-  background-image: url("assets/images/contact-form-shapes-mobile@2x.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
   width: 380px;
   height: 779px;
 }
@@ -552,6 +553,7 @@ input {
   margin-bottom: 24px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  outline-color: #6070ff;
 }
 
 textarea {
@@ -564,6 +566,7 @@ textarea {
   color: #b3bac5;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  outline-color: #6070ff;
 }
 
 .contact-button {
