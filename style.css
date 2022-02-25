@@ -280,7 +280,8 @@ body {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  transition: font-size 0.5s, height 0.5s, background-color 0.5s, color 0.5s;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
 }
 
 .view-project-btn:enabled {
@@ -291,8 +292,6 @@ body {
 .view-project-btn:hover {
   background-color: #6070ff;
   color: #fff;
-  font-size: 24px;
-  height: 55px;
   cursor: pointer;
 }
 
@@ -714,12 +713,5 @@ textarea {
 
   .contact-text {
     padding-bottom: 15px;
-  }
-
-  .mt-12 {
-    transition: transform 0.5s;
-  }
-  .mt-12:hover {
-    transform: scale(1.2);
   }
 }
