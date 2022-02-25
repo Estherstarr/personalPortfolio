@@ -603,7 +603,7 @@ textarea {
 
 @media (min-width: 992px) {
   .body-m1 {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -641,10 +641,14 @@ textarea {
   .portfolio-item {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 80%;
     padding: 50px;
     justify-content: space-between;
     margin: 0 auto;
+  }
+
+  .portfolio-item:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
   .portfolio-m2 {
@@ -685,7 +689,7 @@ textarea {
   }
 
   .skilllist {
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .portfolio-m4 {
@@ -702,7 +706,7 @@ textarea {
     margin: 0 auto;
   }
 
-  .contact-box-m6 {
+  .contact-box {
     background-image: url("assets/images/contact-form.png");
     background-size: cover;
   }
@@ -713,5 +717,13 @@ textarea {
 
   .contact-text {
     padding-bottom: 15px;
+  }
+
+  .about-top {
+    margin-left: 5px;
+  }
+
+  .about-secondary-text {
+    width: 500px;
   }
 }
