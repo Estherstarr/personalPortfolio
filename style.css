@@ -13,6 +13,11 @@ ul {
   margin: 0;
 }
 
+.body-m1 {
+  width: 400px;
+  background-color: #f4f5f7;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -21,8 +26,6 @@ ul {
 }
 
 body {
-  max-width: 380px;
-  margin: 0 auto;
   font-family: Poppins, sans-serif;
   background-color: #e5e5e5;
 }
@@ -98,8 +101,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  width: 327px;
-  height: 146px;
   left: 24px;
   top: 276px;
   margin: 12px 0;
@@ -110,6 +111,7 @@ body {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
+  max-width: 100%;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
@@ -323,7 +325,7 @@ body {
   border-top-right-radius: 80px;
   background-color: #fff;
   margin-top: -50px;
-  width: 380px;
+  width: 400px;
 }
 
 .about-top {
@@ -523,7 +525,7 @@ body {
 
 .contact-section {
   background-color: #fff;
-  width: 380px;
+  width: 400px;
   height: 779px;
 }
 
@@ -593,4 +595,135 @@ textarea {
 .contact-button:active {
   background-color: #2230d2;
   color: #fff;
+}
+
+.navbar2 {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .body-m1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar2 {
+    color: #344563;
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    margin-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -10px;
+  }
+
+  .logo {
+    margin-top: -10px;
+  }
+
+  .intro {
+    background-image: url("assets/images/Header-bg@2x-png");
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+  }
+
+  .tester2 {
+    width: 710px;
+    margin: 0 auto;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .portfolio-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .portfolio-m2 {
+    margin-left: 40px;
+  }
+
+  .about-section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+    padding-top: 200px;
+  }
+
+  .contact-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .portofolio-m3 {
+    width: 50%;
+    margin-top: -65px;
+    padding-right: 50px;
+  }
+
+  .panel {
+    display: flex;
+    padding-right: 70px;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    width: 102px;
+    height: 100px;
+  }
+
+  .skilllist {
+    margin-left: 100px;
+  }
+
+  .portfolio-m4 {
+    width: 40%;
+    padding-left: 60px;
+  }
+
+  .work-section {
+    row-gap: 70px;
+  }
+
+  .contact-box-m5 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .contact-box {
+    background-image: url("assets/images/contact-form.png");
+    background-size: cover;
+  }
+
+  .contact-button {
+    margin: 18px auto;
+  }
+
+  .contact-text {
+    padding-bottom: 15px;
+  }
+
+  .about-top {
+    margin-left: 5px;
+  }
+
+  .about-secondary-text {
+    width: 500px;
+  }
 }
