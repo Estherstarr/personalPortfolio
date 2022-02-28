@@ -14,6 +14,7 @@ Create Github repository
 Have VSCode or choice text editor installed
 Have Git installed
 Good Knowledge of Linters
+Good knowledge og Gitpages
 
 ### Setup
 Git clone - https://github.com/esterstarr/My-Portfolio
