@@ -63,7 +63,7 @@ body {
 }
 
 .intro {
-  max-height: 604px;
+  /* max-height: 604px; */
   background-image: url("assets/images/header-shapes-mobile@2x.svg");
   background-position: top right;
   background-size: cover;
@@ -77,21 +77,21 @@ body {
   background-color: white;
 }
 
-.intro h1 {
+h1 {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #172b4d;
-  position: static;
-  width: 327px;
-  height: 150px;
-  left: 24px;
+  /* position: static; */
+  /* width: 327px;
+  height: 150px; */
+  /* left: 24px; */
   margin: 15px 0;
-  order: 0;
+  /* order: 0; */
 }
 
 .intro .about-me {
@@ -352,12 +352,12 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   color: #172b4d;
-  flex: none;
-  flex-grow: 0;
-  margin: 12px 0;
+  /* flex: none; */
+  /* flex-grow: 0; */
+  /* margin: 12px 0; */
 }
 
 .about-secondary-text {
@@ -366,21 +366,21 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  flex: none;
-  flex-grow: 0;
+  /* flex: none;
+  flex-grow: 0; */
   margin: 12px 0;
 }
 
 .get-resume-btn {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   margin-top: 15px;
   padding: 12px;
-  height: 48px;
+  /* height: 48px; */
   background-color: #fff;
   color: #6070ff;
   border: 1px solid #7f8cff;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
@@ -468,42 +468,14 @@ body {
   display: block;
 }
 
-#html {
+.tech-tag-2 {
   background-color: #ebebff;
-  height: 24px;
-  width: 60px;
   color: #6070ff;
   font-size: 15px;
   font-weight: 500;
   border-radius: 10px;
   padding-left: 15px;
   padding-top: 1px;
-}
-
-#css {
-  background-color: #ebebff;
-  height: 24px;
-  width: 50px;
-  color: #6070ff;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  padding-left: 12px;
-  padding-top: 1px;
-  margin-left: 10px;
-}
-
-#javascript {
-  background-color: #ebebff;
-  height: 24px;
-  width: 100px;
-  color: #6070ff;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  padding-left: 12px;
-  padding-top: 1px;
-  margin-left: 5px;
 }
 
 .contact-form {
@@ -657,7 +629,7 @@ textarea {
 
   .about-section {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: row;
     height: 750px;
@@ -670,7 +642,7 @@ textarea {
   }
 
   .portofolio-m3 {
-    width: 50%;
+    /* width: 50%; */
     margin-top: -65px;
     padding-right: 50px;
   }
@@ -684,18 +656,18 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-right: 5px;
-    width: 102px;
-    height: 100px;
+    /* width: 102px;
+    height: 100px; */
   }
 
   .skilllist {
     margin-left: 100px;
   }
 
-  .portfolio-m4 {
+  /* .portfolio-m4 {
     width: 40%;
     padding-left: 60px;
-  }
+  } */
 
   .work-section {
     row-gap: 70px;
@@ -723,7 +695,7 @@ textarea {
     margin-left: 5px;
   }
 
-  .about-secondary-text {
-    width: 500px;
-  }
+  /* .about-secondary-text {
+     width: 500px; 
+  } */
 }
