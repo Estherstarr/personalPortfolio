@@ -13,6 +13,23 @@ ul {
   margin: 0;
 }
 
+.hamburger {
+  display: block;
+}
+.desktop-menu {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px 0 24px;
+  background: #fff;
+  height: 48px;
+  position: fixed;
+  width: 100vw;
+}
+
 .body-m1 {
   width: 400px;
   background-color: #f4f5f7;
@@ -23,6 +40,25 @@ ul {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #6070FF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 body {
