@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onomeh's Portfolio</title>
+    <title>Onomeh Portfolio</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:regular,bold,500,600&amp;display=swap"
@@ -15,25 +15,29 @@
     <div class="body-m1">
       <header>
         <div class="container">
-          <a href="/" class="logo">My Logo</a>
-          <nav class="navbar">
-            <button class="nav-button" type="button">
-              <img src="assets/Icons/hamburger-button.svg" alt="more" />
-            </button>
-          </nav>
-
-          <nav class="navbar2">
-            <div>Portfolio</div>
-            <div>About</div>
-            <div>Contact</div>
-          </nav>
+          <a href="#" class="logo nav-branding">My Logo</a>
+          <ul class="desktop-menu">
+            <li><a href="#work-section" class="nav-link">Portfolio</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+          <ul class="nav-menu">
+            <li><a href="#work-section" class="nav-item">Portfolio</a></li>
+            <li><a href="#about-section" class="nav-item">About</a></li>
+            <li><a href="#contact-section" class="nav-item">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </header>
 
       <section class="intro">
         <div class="tester2">
           <h1>
-            I'm Onomeh, <br />
+            I'm Onomeh,<br />
             Glad to see you!
           </h1>
 
@@ -44,7 +48,7 @@
             contact me.
           </p>
 
-          <a href="#" class="connect">LET'S CONNECT</a>
+          <a href="#" class="connect"><h3>LET'S CONNECT</h3></a>
 
           <ul class="socials-media-icons">
             <li class="twitter-icon">
@@ -82,7 +86,7 @@
         </div>
       </section>
 
-      <section class="work-section">
+      <section class="work-section" id="work-section">
         <article class="portfolio-item">
           <div>
             <img src="./assets/images/tonic.png" alt="tonic" class="mt-12" />
@@ -106,15 +110,15 @@
             </p>
 
             <ul class="tech-tags">
-              <li class="tech-tag-name" id="html">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">html</span>
               </li>
 
-              <li class="tech-tag-name" id="css">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">css</span>
               </li>
 
-              <li class="tech-tag-name" id="javascript">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">javascript</span>
               </li>
             </ul>
@@ -154,15 +158,15 @@
             </p>
 
             <ul class="tech-tags">
-              <li class="tech-tag-name html">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">html</span>
               </li>
 
-              <li class="tech-tag-name css">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">css</span>
               </li>
 
-              <li class="tech-tag-name javascript">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">javascript</span>
               </li>
             </ul>
@@ -198,15 +202,15 @@
             </p>
 
             <ul class="tech-tags">
-              <li class="tech-tag-name html">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">html</span>
               </li>
 
-              <li class="tech-tag-name css">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">css</span>
               </li>
 
-              <li class="tech-tag-name javascript">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">javascript</span>
               </li>
             </ul>
@@ -246,15 +250,15 @@
             </p>
 
             <ul class="tech-tags">
-              <li class="tech-tag-name html">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">html</span>
               </li>
 
-              <li class="tech-tag-name css">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">css</span>
               </li>
 
-              <li class="tech-tag-name javascript">
+              <li class="tech-tag-name tech-tag-2">
                 <span class="tech-tag-text">javascript</span>
               </li>
             </ul>
@@ -268,7 +272,7 @@
         </article>
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about-section">
         <div class="portfolio-m4">
           <div class="about-top">
             <h2 class="about-primary-text">About<br />Myself</h2>
@@ -372,7 +376,7 @@
         </div>
       </section>
 
-      <footer class="contact-section">
+      <footer class="contact-section" id="contact-section">
         <div class="contact-box">
           <div class="contact-box-m5">
             <h3 class="h3-contact">Contact me</h3>
@@ -414,5 +418,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
