@@ -13,16 +13,77 @@ ul {
   margin: 0;
 }
 
-.body-m1 {
-  width: 400px;
-  background-color: #f4f5f7;
+.hamburger {
+  display: block;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  padding: 0 36px 0 24px;
+  background: #fff;
+  height: 48px;
+  position: fixed;
+  width: 100vw;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #6070ff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  background-color: rgba(50, 70, 255, 0.76);
+  backdrop-filter: blur(5px);
+  opacity: 100%;
+  width: 100%;
+  height: 100vh;
+  right: -100%;
+  top: 0;
+  transition: 0.3s;
+  padding: 56px 0 0 28px;
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
+.nav-item {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.nav-menu li {
+  margin-bottom: 24px;
 }
 
 body {
@@ -63,7 +124,6 @@ body {
 }
 
 .intro {
-  max-height: 604px;
   background-image: url("assets/images/header-shapes-mobile@2x.svg");
   background-position: top right;
   background-size: cover;
@@ -77,21 +137,14 @@ body {
   background-color: white;
 }
 
-.intro h1 {
+h1 {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #172b4d;
-  position: static;
-  width: 327px;
-  height: 150px;
-  left: 24px;
   margin: 15px 0;
-  order: 0;
 }
 
 .intro .about-me {
@@ -326,6 +379,7 @@ body {
   background-color: #fff;
   margin-top: -50px;
   width: 400px;
+  margin-left: 30px;
 }
 
 .about-top {
@@ -352,12 +406,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #172b4d;
-  flex: none;
-  flex-grow: 0;
-  margin: 12px 0;
 }
 
 .about-secondary-text {
@@ -366,21 +415,15 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  flex: none;
-  flex-grow: 0;
   margin: 12px 0;
 }
 
 .get-resume-btn {
-  display: flex;
-  align-items: center;
   margin-top: 15px;
   padding: 12px;
-  height: 48px;
   background-color: #fff;
   color: #6070ff;
   border: 1px solid #7f8cff;
-  box-sizing: border-box;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
@@ -424,11 +467,6 @@ body {
   line-height: 24px;
 }
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
 .panel {
   padding: 12px;
   display: none;
@@ -468,42 +506,14 @@ body {
   display: block;
 }
 
-#html {
+.tech-tag-2 {
   background-color: #ebebff;
-  height: 24px;
-  width: 60px;
   color: #6070ff;
   font-size: 15px;
   font-weight: 500;
   border-radius: 10px;
   padding-left: 15px;
   padding-top: 1px;
-}
-
-#css {
-  background-color: #ebebff;
-  height: 24px;
-  width: 50px;
-  color: #6070ff;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  padding-left: 12px;
-  padding-top: 1px;
-  margin-left: 10px;
-}
-
-#javascript {
-  background-color: #ebebff;
-  height: 24px;
-  width: 100px;
-  color: #6070ff;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  padding-left: 12px;
-  padding-top: 1px;
-  margin-left: 5px;
 }
 
 .contact-form {
@@ -527,6 +537,7 @@ body {
   background-color: #fff;
   width: 400px;
   height: 779px;
+  margin-left: 30px;
 }
 
 .h3-contact {
@@ -597,29 +608,41 @@ textarea {
   color: #fff;
 }
 
-.navbar2 {
-  display: none;
-}
-
 @media (min-width: 992px) {
-  .body-m1 {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .navbar {
+  .nav-menu,
+  .nav-menu.active {
     display: none;
   }
 
-  .navbar2 {
-    color: #344563;
+  .container {
     display: flex;
-    width: 25%;
-    justify-content: space-around;
-    margin-right: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: -10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .nav-branding {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
+  }
+
+  .nav-link:hover {
+    color: dodgerblue;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
 
   .logo {
@@ -657,7 +680,6 @@ textarea {
 
   .about-section {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     height: 750px;
@@ -670,7 +692,6 @@ textarea {
   }
 
   .portofolio-m3 {
-    width: 50%;
     margin-top: -65px;
     padding-right: 50px;
   }
@@ -684,17 +705,10 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-right: 5px;
-    width: 102px;
-    height: 100px;
   }
 
   .skilllist {
     margin-left: 100px;
-  }
-
-  .portfolio-m4 {
-    width: 40%;
-    padding-left: 60px;
   }
 
   .work-section {
@@ -721,9 +735,5 @@ textarea {
 
   .about-top {
     margin-left: 5px;
-  }
-
-  .about-secondary-text {
-    width: 500px;
   }
 }
