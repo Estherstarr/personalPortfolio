@@ -213,6 +213,7 @@
             </p>
 
             <form
+              id="contactFormId"
               class="contact-form"
               action="https://formspree.io/f/mdobgbjy"
               method="POST"
@@ -225,6 +226,7 @@
                 required
               />
               <input
+                id="email"
                 type="email"
                 placeholder="onomeh@gmail.com"
                 name="email"
@@ -238,6 +240,7 @@
                 required
               ></textarea>
               <button type="submit" class="contact-button">Get In Touch</button>
+              <span id="form-error" class="error">Your email needs to be in lowercase</span>
             </form>
           </div>
         </div>

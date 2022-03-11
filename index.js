@@ -219,3 +219,20 @@ Array.from(workPortfolio.children).forEach((item, index) => {
     },
   );
 });
+
+// Form Validation
+const email = document.getElementById('email');
+const form = document.getElementById('contactFormId');
+const errorMsg = document.getElementById('form-error');
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.style.visibility = 'visible';
+    setTimeout(() => {
+      errorMsg.style.visibility = 'hidden';
+    }, 5000);
+  } else {
+    errorMsg.style.visibility = 'hidden';
+  }
+});
