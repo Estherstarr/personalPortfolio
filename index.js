@@ -237,7 +237,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-//local storage
+// local storage
 const contactForm = document.querySelector('#contactFormId');
 const fullName = document.querySelector('#name');
 const emailAddress = document.querySelector('#email');
