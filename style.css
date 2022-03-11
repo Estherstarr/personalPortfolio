@@ -588,6 +588,19 @@ h1 {
   padding: 25px;
 }
 
+/* Form Validation */
+.error {
+  visibility: hidden;
+  color: #0a2759;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  margin-left: 50px;
+  font-size: 17px;
+}
+
 input {
   width: 100%;
   font-size: 17px;
