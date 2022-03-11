@@ -86,8 +86,6 @@
         </div>
       </section>
 
-
-      
       <section id="work-portfolio">
         <section id="project-1"></section>
         <section id="project-2"></section>
@@ -95,7 +93,6 @@
         <section id="project-4"></section>
       </section>
       <section id="portfolio-modal" class="modal"></section>
-
 
       <section class="about-section" id="about-section">
         <div class="portfolio-m4">
@@ -219,6 +216,7 @@
               method="POST"
             >
               <input
+                id="name"
                 type="text"
                 placeholder="Onomeh"
                 name="username"
@@ -233,6 +231,7 @@
                 required
               />
               <textarea
+                id="message"
                 placeholder="Write your message here"
                 maxlength="500"
                 rows="5"
@@ -240,7 +239,9 @@
                 required
               ></textarea>
               <button type="submit" class="contact-button">Get In Touch</button>
-              <span id="form-error" class="error">Your email needs to be in lowercase</span>
+              <span id="form-error" class="error"
+                >Your email needs to be in lowercase</span
+              >
             </form>
           </div>
         </div>
