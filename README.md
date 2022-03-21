@@ -1,6 +1,6 @@
 # personalPortfolio
 
-> This is a personal portfolio website that will be used to display my projects.
+> This website contains projects that I worked on
 
 ##
 
