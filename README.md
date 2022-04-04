@@ -1,6 +1,6 @@
 # personalPortfolio
 
-> This website contains projects that I worked on nhehebdgcjh
+> This website contains projects that I've worked on
 
 ##
 
